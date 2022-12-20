@@ -1,0 +1,348 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: inter tight;
+}
+.maindis{
+    display: flex;
+}
+nav{
+    background-color: #3f85b9;
+    width: 15vw;
+    height: 100vh;
+}
+nav .logo img{
+  height: 35px;
+  width: 35px;  
+}
+nav ul li{
+    width: 200px;
+    list-style: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+}
+nav ul li .fa-solid{
+    padding-right: 15px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(166, 166, 166);
+}
+ul #active a{
+    color: white;
+}
+.logo{
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.logo span{
+    font-size: 30px;
+    font-family: just another hand;
+}
+.profileDiv{
+    position: absolute;
+    bottom: 0px;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.profileDiv img{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+}
+.profileDiv p{
+    font-size: 13px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.profileDiv .buttons button{
+    height: 35px;
+    width: 35px;
+    margin: 3px;
+    background-color: #699abf;
+    border: none;
+    border-radius: 10px;
+}
+.profileDiv .buttons{
+    padding-bottom: 40px;
+    padding-top: 20px;
+}
+#cards{
+    display: flex;
+    margin-left: 5px;
+    margin-bottom: 20px;
+}
+.cards img{
+    height: 150px;
+}
+.cards a {
+    text-decoration: none;
+}
+ .cards h3{
+    color: #699abf;
+    display: flex;
+    justify-content: center;
+}
+.cards{
+    height: 200px;
+    min-width: 20.3vw;
+    border-radius: 20px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cards:nth-child(4n){
+    background-color: #bdd8dd;  
+    
+}
+.cards:nth-child(4n+1){
+    
+    background-color: #f9e3d2;
+}
+.cards:nth-child(4n+2){
+    background-color: #feeee1;
+}
+.cards:nth-child(4n+3){
+    background-color: #dde8eb;
+}
+.tables{
+    display: flex;
+}
+.students {
+    width: 52vw;
+    height: 65vh;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+.students table{
+    padding: 0 15px;
+    border-radius:20px ;
+    background-color: white;
+}
+.students table th{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 13px;
+    color: #3f85b9;
+}
+.students table td{
+    color: #3f85b9;
+    padding: 15px 20px;
+    font-size: 13px;
+    border-top: 1px solid #d5d5d5;
+}
+.students h3{
+    display: flex;
+    justify-content: center;
+    color: #3f85b9;
+}
+.students table tr:hover{
+    background-color: #d7dbf8;
+}
+.students table td img{
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+}
+.applications{
+    height: 63vh;
+    width: 31vw;
+    margin-left: 20px;
+    background-color:  #F5F7F6;
+}
+.applications h3{
+    display: flex;
+    justify-content: center;
+}
+.applyy{
+    height: 60vh;
+    overflow-y: scroll;
+}
+.apply{
+    display: flex;
+    align-items: center;
+    height: 60px;
+    margin: 10px 20px;
+    padding: 10px;
+    background-color: white;
+    justify-content: space-between;
+    box-shadow: 1px 3.98256px 7.4564px rgba(0, 0, 0, 0.2);
+}
+.apply h4{
+    color: #3f85b9;
+}
+.apply p{
+    color: gray;
+    font-size: 13px;
+}
+.apply button{
+    height: 30px;
+    width: 80px;
+    background-color: transparent;
+    color: #3f85b9;
+    border: 1px solid #3f85b9;
+}
+.applications h3{
+    padding: 10px;
+}
+.inputs{
+    display: flex;
+    justify-content: center;
+}
+.inputs .inp{
+    display: flex;
+    flex-direction: column;
+}
+form{
+    width: 83vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.inp input{
+    padding-left: 10px;
+    height: 40px;
+    width: 300px;
+    border: 2px solid #68baf9;
+}
+.inp select{
+    padding-left: 10px;
+    height: 45px;
+    width: 310px;
+    border: 2px solid #68baf9;
+}
+.inp label span{
+    font-weight: 600;
+}
+.inp label{
+    margin-bottom: 5px;
+}
+input::placeholder{
+    padding-left: 10px;
+}
+.inp{
+    margin: 10px;
+}
+.inp .fa-solid{
+    color: #68baf9;
+    margin-right: 5px;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    
+}
+.button button{
+    height: 40px;
+    width: 350px;
+    background-color: #3f85b9;
+    color: white;
+    border: none;
+}
+#h2{
+    display: flex;
+    justify-content: center;
+    color: #3f85b9;
+    margin-top: 20px;
+}
+.viewRight{
+    display: flex;
+    justify-content: right;
+}
+.viewRight a{
+    color: #699abf;
+    text-decoration: none;
+}
+.viewStudents table{
+    padding: 0 15px;
+    border-radius:20px ;
+    background-color: white;
+}
+.viewStudents table th{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 11px;
+    color: #3f85b9;
+}
+.viewStudents table td{
+    color: #3f85b9;
+    padding: 15px 15px;
+    font-size: 11px;
+    border-top: 1px solid #d5d5d5;
+}
+.viewStudents table td a{
+    color: #68baf9;
+}
+.lec {
+    width: 83vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.lec table th{
+    font-size: 15px;
+}
+.lec table td{
+    padding: 15px 20px;
+    font-size: 15px;
+}
+#form{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.viewStudents h3{
+    display: flex;
+    justify-content: center;
+    color: #3f85b9;
+}
+.viewStudents table tr:hover{
+    background-color: #d7dbf8;
+}
+.viewStudents table td img{
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+}
+.viewStudents td form{
+    width: 20px;
+    padding: 0;
+    height: 20px;
+}
+.viewStudents td form button{
+    height: 20px;
+    width: 60px;
+    background-color: transparent;
+    border: 1px solid red;
+    color: red;
+}
+.space{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    color: #3f85b9;
+    
+}
+#p {
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+    color: gray;
+    margin: 10px;
+}

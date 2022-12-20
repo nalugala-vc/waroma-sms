@@ -1,0 +1,129 @@
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(
+      to right,
+      #e9f9ee 0%,
+      #e9f9ee 50%,
+      #02204f 50%,
+      #02204f 100%
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+*{
+    margin: 0;
+    padding: 0;
+    font-family:inter tight ;
+}
+.mainDiv{
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+.mainDiv,.flexbox{
+    display: flex;
+    justify-content: center;
+}
+.logo img{
+    height: 35px;
+
+}
+.logo{
+    align-items: center;
+}
+.logo span{
+    font-size: 25px;
+    font-family: just another hand;
+}
+.form{
+    height: 410px;
+    width: 420px;
+    padding: 30px;
+}
+.form>*{
+    margin: 10px;
+}
+.wel{
+    font-size: 25px;
+    font-weight: 600;
+}
+.google{
+    padding: 10px;
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.fa-google{
+    margin-right: 20px;
+    color: #0e3066;
+}
+h2 {
+    width: 100%; 
+    text-align: center; 
+    font-weight: 300;
+    border-bottom: 1px solid gainsboro; 
+    line-height: 0.1em;
+    margin: 10px 0 20px; 
+ } 
+ 
+ h2 span { 
+     background:#fff; 
+     padding:0 10px; 
+ }
+ .optn2{
+    margin: 30px;
+ }
+.or {
+    color: gray;
+    font-size: 13px;
+}
+.pic img{
+    height: 500px;
+    width: 470px;
+    
+}
+.flexbox input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #02204f;
+    padding-left: 10px;
+    width: 370px;
+    height: 40px;
+    background-color: transparent;
+}
+form>*{
+    margin: 10px;
+}
+.form-check{
+    display: flex;
+    align-items: center;
+}
+label{
+    font-size: 15px;
+}
+.form-check input{
+    margin-right: 10px;
+    width: 15px;
+    height: 15px;
+}
+.btn-link{
+    font-size: 15px;
+}
+.rem{
+    padding-top: 10px;
+    justify-content: space-between;
+}
+.button{
+    padding-top: 10px;
+}
+.button button{
+    width: 400px;
+    height: 40px;
+    color: #fff;
+    background-color: #0e3066;
+    border: none;
+}
+

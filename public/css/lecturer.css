@@ -1,0 +1,631 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: inter tight;
+}
+.body{
+    background-color: #3f85b9;
+    display: flex;
+}
+nav{
+    width: 15vw;
+    height: 100vh;
+    background-color: #3f85b9;
+}
+nav ul li{
+    width: 200px;
+    list-style: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+}
+nav ul li .fa-solid{
+    padding-right: 15px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(166, 166, 166);
+}
+ul #active a{
+    color: white;
+}
+.logo{
+    margin-top: 20px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    height: 35px;
+    
+}
+.logo span{
+    font-size: 30px;
+    font-family: just another hand;
+}
+.main{
+    background-color: white;
+    border-radius: 20px;
+    margin:5px;
+    min-width: 82vw;
+    height: 87vh;
+}
+.mainDiv{
+    display: flex;
+}
+.mainmain{
+    min-width: 60vw;
+}
+.sidemain{
+    max-height: 87vh;
+    max-width: 25vw;
+    background-color: #F5F7F6;
+}
+.clender{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.nhead{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 30px 10px 30px;
+}
+.nhead h3{
+    color: #3f85b9;
+}
+.nhead a{
+    text-decoration: none;
+    color: #3f85b9;
+}
+.notif1 img{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin: 0px 20px 0 0;
+}
+#notify{
+    max-height: 42vh;
+    overflow-y: scroll;
+}
+.notif1{
+    display: flex;
+    justify-content:center;
+    margin:0 20px;
+    padding: 20px;
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+    gap: 10px;
+    margin-top: 5px;
+}
+.notif1 .upClass p{
+    font-size: 13px;
+    color: gray;
+}
+#notify::-webkit-scrollbar {
+    width: 6px;
+}
+.upClass b{
+    font-size: 14px;
+}
+.upClass{
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+}
+.time span{
+    color: #3f85b9;
+    font-size: 13px;
+}
+/*#f5f7f7
+#f6f5f7
+#f7f6f5*/
+.class img{
+    height: 150px;
+}
+#class>*{
+    margin: 15px;
+}
+.class{
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 56vw;
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+}
+.deets h3{
+    color: #3f3d56;
+}
+.buttn{
+    margin: 20px;
+}
+.buttn button{
+    color: white;
+    
+    height: 40px;
+    width: 150px;
+    border: none;
+}
+#class{
+    height: 74vh;
+    overflow-y: scroll;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 40px 20px 20px;
+}
+.head a{
+    text-decoration: none;
+    color: #3f85b9;
+}
+.head h2{
+    color:#3f3d56;
+}
+.serch{
+    margin: 20px;
+}
+.serch input{
+    margin-right: 5px;
+    background-color:#699abf ;
+    padding-left: 10px;
+    border-radius: 10px;
+    height: 40px;
+    width: 280px;
+    border: none;
+}
+.serch input ::placeholder{
+    padding-left: 10px;
+    color: #ecebff;
+}
+.serch button{
+    height: 40px;
+    width: 40px;
+    background-color: #699abf;
+    border-radius: 5px;
+    border: none;
+}
+.serch button .fa-solid{
+    color: white;
+}
+.buttons .fa-bell,.buttons .fa-gear{
+    color: #ecebff;
+}
+.buttons button{
+    margin: 5px;
+    height: 40px;
+    width: 40px;
+    color: gray;
+    box-shadow: 1px 3.98256px 7.4564px rgba(0, 0, 0, 0.2);
+    border-radius: 100%;
+    background-color: #699abf;
+    border: none; 
+}
+.classOne:nth-child(2n){   
+    background-color: #9FC1DC;
+}
+.classOne:nth-child(2n+1){   
+    background-color:#F5F7F6;
+}
+.classOne:nth-child(2n+1) h4,.classOne:nth-child(2n+1) b{
+    color: #3f85b9;
+}
+.classOne:nth-child(2n) h4,.classOne:nth-child(2n) b{
+    color: white;
+}
+.classOne div{
+    padding: 20px 10px;
+}
+.classOne:hover{
+    transform: scale(1.05);
+}
+.classOne p{
+    margin-top: 10px;
+    font-size: 13px;
+    color: gray;
+}
+
+#classOne a{
+    color: #3f85b9;
+    font-size: 14px;
+    margin-left: 20px;
+    text-decoration: none;
+}
+.lecclasses{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    height: 44vh;
+}
+.profile img{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+}
+.controls{
+    display: flex;
+    flex-direction: column;
+    min-width: 83vw;
+}
+.prof,.profile{
+    display: flex;
+    align-items: center;
+
+}
+.hello{
+    display: flex;
+    width: 55vw;
+    border-radius: 20px;
+    margin: 10px;
+    background-color: #F5F7F6;
+}
+.hello .lef{
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.hello .lef >*{
+    margin: 7px 20px;
+}
+.hello .lef button{
+    height: 40px;
+    width: 150px;
+    background-color: #3f85b9;
+    color: white;
+    border: none;
+}
+.display{
+    display: flex;
+}
+.hello img{
+    height: 200px;
+}
+.hello p{
+    font-size: 13px;
+    color: gray;
+}
+.hello h2{
+    color:#3f85b9 ;
+}
+.classesetc{
+    margin: 10px 5px;
+    border-radius: 20px;
+    padding: 10px 10px;
+    background-color: #F5F7F6;
+    height: 79vh;
+}
+.classesetc .class{
+    background-color: white;
+    height: 70px;
+    width: 25vw;
+    margin-top: 10px;
+}
+.classesetc .class button{
+    background-color: #F5F7F6;
+    height: 15px;
+    width: 15px;
+    margin-right:20px ;
+    color: gray;
+    border: none;
+}
+.classesetc .class img{
+    height: 50px;
+}
+.classesetc .class .imgg{
+    padding: 13px 5px;
+    display: flex;
+}
+.classesetc .class .imgg div{
+    margin-left: 20px;
+}
+.classesetc .students .intro{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+.classesetc .students .intro a{
+    color: gray;
+    font-size: 14px;
+    text-decoration: none;
+}
+.classesetc .students .img img{
+    
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+}
+.classesetc .students .img .infodiv{
+    background-color: #3f3d56;
+    opacity: 0.5;
+    position: relative;
+    top:-45px;
+    left: 15px;
+    height: 40px;
+    width: 70px;
+}
+.classesetc .students .img p{
+    color: white;
+    font-size: 13px;
+}
+.profile span{
+    padding: 0 30px;
+    color: #ecebff;
+}
+.prof{
+    justify-content: space-between;
+}
+.lecStudents{
+    position: absolute;
+    display: flex;
+    width: 25vw;
+    overflow-x: scroll;
+}
+.lecStudents >*{
+    margin: 0px 5px;
+}
+.view{
+    display: flex;
+    justify-content: center;
+}
+.view a{
+    color: #3f85b9;
+    margin: 20px;
+}
+.virtual{
+    position: relative;
+    top: 120px;
+    margin: 10px 30px;
+    height: 100px;
+    background-color: white;
+    width: 20vw;
+}
+.virtual p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 15px;
+    color: gray;
+    font-size: 14px;
+}
+.virtual div{
+    display: flex;
+    padding-top: 5px;
+    justify-content: center;
+}
+.virtual div button{
+    height: 30px;
+    width: 100px;
+    border: none;
+    background-color: #3f85b9;
+    color: white;
+}
+.addingclass{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 20px;
+}
+.addingclass h3{
+    color: #3f85b9;
+}
+.addingclass a{
+    color: #d5d5d5;
+    text-decoration: none;
+    font-size: 14px;
+}
+.addingclass .fa-solid{
+    color: #d5d5d5;
+
+}
+.classOne{
+    height: 200px;
+    width: 17vw;
+    border-radius: 20px;
+}
+.lecclasses{
+    margin-left: 10px;
+}
+.lecclasses>*{
+    margin: 10px 10px;
+}
+#controls{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+::-webkit-scrollbar{
+    width: 6px;
+}
+#search::placeholder{
+    color: #ecebff;
+}
+#newclass input{
+    width: 300px;
+    border: 0;
+    border-bottom: 2px solid #3f85b9;
+    height: 40px;
+}
+#newclass select{
+    width: 300px;
+    height: 40px;
+    border: 0;
+    border-bottom: 2px solid #3f85b9;
+}
+#newclass{
+    margin: 10px 80px;
+   
+}
+#newclass>*{
+    margin: 20px;
+}
+.space{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.newClass h2,.newClass p{
+    display: flex;
+    justify-content: center;
+}
+.newClass h2{
+    padding-top: 80px;
+    color: #3f3d56;
+}
+.newClass p{
+    color: gray;
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+.center{
+    display: flex;
+    justify-content: center;
+}
+label{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.space .fa-solid,.space .fa-regular{
+    font-size: 20px;
+    color: #699abf;
+    margin-right: 20px;
+}
+.inpDiv{
+    display: flex;
+    flex-direction: column;
+}
+.space button{
+    height: 40px;
+    width: 200px;
+    background-color: #3f85b9;
+    color: white;
+    border: none;
+}
+.banner{
+    width: 64vw;
+    height: 150px;
+    background-image: linear-gradient(rgba(63, 133, 185,0.5),rgba(63, 133, 185,0.5)),url(/images/banner.png);
+    background-position: bottom;
+    background-size: cover;
+}
+.banner h2{
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding-top: 50px;
+    font-size: 30px;
+}
+.banner p{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.links{
+    display: flex;
+    justify-content: center;
+}
+.links a{
+    text-decoration: none;
+    font-size: 18px;
+    margin: 10px 20px;
+    color: gray;
+}
+.links #active{
+    text-decoration: underline;
+    color: #3f85b9;
+    font-weight: 600;
+}
+.addActive{
+    text-decoration: underline;
+    color: #3f85b9;
+    font-weight: 600;
+}
+.tile{
+    margin: 10px;
+}
+.classwork{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 55vh;
+    overflow-y: scroll;
+}
+.noschedule{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+}
+.noschedule img{
+    height: 150px;
+}
+.noschedule h3{
+    color: #3f85b9;
+    font-size: smaller;
+}
+.emptyClass img{
+    height: 300px;
+}
+.emptyClass{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.emptyClass a{
+    color: #2599f1;
+}
+.tile .info{
+   margin-right: 100px;
+}
+.classwork a{
+    text-decoration: none;
+}
+.tile .info h4{
+    color: #3f85b9;
+}
+#add{
+    margin-left: 200px;
+}
+.studentsTable img{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+
+}
+.studentsTable table{
+    margin: auto;
+    padding: 0 15px;
+    border-radius:20px ;
+    background-color: white;
+}
+.studentsTable table th{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #3f85b9;
+}
+.studentsTable table td{
+    color: #3f85b9;
+    padding: 15px 60px;
+    border-top: 1px solid #d5d5d5;
+}
+.studentsTable table .venue{
+    color: #16f233;
+}
+.studentsTable table tr:hover{
+    background-color: #d7dbf8;
+}
+.attendance{
+    width: 60vw;
+}
+.attend{
+    padding-top: 30px;
+}
+.addActive{
+    text-decoration: underline;
+    color: #3f85b9;
+    font-weight: 600;
+}

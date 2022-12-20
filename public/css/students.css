@@ -1,0 +1,660 @@
+/*
+
+#F5F7F6->background of tiles 
+#9FC1DC->1st tile
+#cfe1ef->div in 1st tile
+b3b5ee#->2nd tile
+#d7dbf8->div in 2nd tile
+#f8dbcd->3rd tile
+#feeddd->div in 3rd tile
+#3f85b9->serbaricon
+#edf2f6->na\vHighlight
+
+*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: inter tight;
+}
+body{
+    display: flex;
+}
+.navDiv{
+    width: 17vw;
+    margin-right: 10px;
+}
+.profileDiv{
+    width: 17vw;
+}
+.logo{
+    padding-left: 30px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    height: 35px;
+}
+.logo span{
+    font-size: 30px;
+    font-family: just another hand;
+}
+#active{
+    background-color: #edf2f6;
+}
+#active a{
+    color:#3f85b9 ;
+    font-weight: 600;
+}
+.navs ul li{
+    width: 200px;
+    list-style: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.navs ul li .fa-solid{
+    padding-right: 15px;
+}
+.navs ul li a{
+    text-decoration: none;
+    color: gray;
+}
+.logout,.socials{
+    position: absolute;
+    bottom: 5px;
+    width: 170px;
+    margin-left: 10px;
+    padding: 20px;
+    box-shadow: 1px 3.98256px 7.4564px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+}
+.socials{
+    padding: 15px;
+    margin-right: 10px;
+}
+.logout img{
+    width: 170px;
+}
+.buttLog,.logout p {
+    display: flex;
+    justify-content: center;
+}
+.logout button a{
+    text-decoration: none;
+    color: white;
+}
+.logout p,.socials p{
+    padding: 20px;
+    color: gray;
+    font-size: 13px;
+    text-align: center;
+}
+.logout button,.socials button{
+    color: white;
+    height: 40px;
+    width: 200px;
+    border: none;
+    background-color: #3f85b9;
+}
+.mainCont{
+    width: 66vw;
+    
+}
+.profileDiv{
+    margin-left: 20px;
+}
+.buttons{
+    display: flex;
+    justify-content: right;
+}
+.buttons button{
+    margin: 10px;
+    height: 40px;
+    width: 40px;
+    color: gray;
+    box-shadow: 1px 3.98256px 7.4564px rgba(0, 0, 0, 0.2);
+    border-radius: 100%;
+    background-color: white;
+    border: none; 
+}
+#prof img{
+    height: 70px;
+    width: 70px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+#prof h4{
+    margin-top: 10px;
+    font-size: 15px;
+    color: #3f85b9;
+}
+#prof p{
+    font-size: 13px;
+    color: #3f85b9;
+    font-weight: 300;
+}
+#info h4{
+    margin-top: 15px;
+    color: #3f85b9;
+}
+#info li{
+    color: #3f85b9;
+    font-weight: 300;
+    font-size: 14px;
+    margin: 5px;
+}
+#prof h4,.prof p,.profilepic{
+    display: flex;
+    justify-content: center;
+}
+.socials img{
+    width: 170px;
+}
+/*home*/
+.serch{
+    margin: 10px;
+}
+.serch input{
+    margin-right: 5px;
+    background-color:#F5F7F6 ;
+    padding-left: 10px;
+    border-radius: 10px;
+    height: 40px;
+    width: 280px;
+    border: none;
+}
+.serch input ::placeholder{
+    padding-left: 10px;
+}
+.serch button{
+    height: 40px;
+    width: 40px;
+    background-color: #3f85b9;
+    border-radius: 5px;
+    border: none;
+}
+.serch button .fa-solid{
+    color: white;
+}
+.backGroundChange{
+    background-color: #F5F7F6;
+    border-radius: 20px;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+.mainContToo h2,.schedule h2{
+    color: #3f85b9;
+    margin: 10px;
+}
+#cards>*{
+    margin-top: 7px;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+#cards{
+    display: flex;
+    width: 65vw;
+    height: 320px;
+    overflow-x: scroll;
+}
+.card{
+    height: 300px;
+    min-width: 25vw;
+    border-radius: 20px;
+}
+.card img{
+    height: 200px;
+    width: 300px;
+}
+#cards::-webkit-scrollbar{
+    display: none;
+}
+
+.img{
+    padding-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+.card {
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+}
+.bounce:hover {
+    animation-name: bounce;
+    animation-timing-function: ease;
+}
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-50px); }
+  100% { transform: translateY(0); }
+}
+.card:nth-child(3n){
+    background-color: #f8dbcd;  
+    
+}
+.card:nth-child(3n+1){
+    
+    background-color: #9FC1DC;
+}
+.card:nth-child(3n+2){
+    background-color: #b3b5ee;
+}
+
+.card:nth-child(3n) .infoCards{   
+    background-color: #feeddd;
+}
+.card:nth-child(3n+1) .infoCards{   
+    background-color:#cfe1ef;
+}
+.card:nth-child(3n+2) .infoCards{   
+    background-color: #d7dbf8;
+}
+
+.infoCards{
+    margin: 0px 20px;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: center;
+}
+.infoCards div{
+    width: 23vw;
+}
+.infoCards h4,.infoCards p{
+    color: #3f85b9;
+}
+.schedule .table{
+    height: 30vh;
+    overflow-y: scroll;
+}
+.unitt .schedule{
+    height: 79vh;
+    overflow-y: scroll;
+}
+.schedule h2{
+    margin-bottom: 20px;
+}
+.card a{
+    text-decoration: none;
+}
+.unitt .schedule table button{
+    height: 40px;
+    width: 100px;
+    border: 1px solid #16f233;
+    color: #16f233;
+    background-color: transparent;
+}
+.schedule table{
+    margin: auto;
+    padding: 0 15px;
+    border-radius:20px ;
+    background-color: white;
+}
+.schedule table th{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #3f85b9;
+}
+.schedule table td{
+    color: #3f85b9;
+    padding: 15px 45px;
+    border-top: 1px solid #d5d5d5;
+}
+.schedule table .venue{
+    color: #16f233;
+}
+.schedule table tr:hover{
+    background-color: #d7dbf8;
+}
+.tile{
+    width: 60vw;
+    min-height: 20vh;
+}
+.tile:nth-child(3n){
+    background-color: #f8dbcd;  
+    
+}
+.unregistered .h2{
+    margin: 20px 30px;
+}
+.unregistered table{
+    margin-left: 70px;
+}
+.tile:nth-child(3n+1){
+    
+    background-color: #9FC1DC;
+}
+.emptAtt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.emptAtt h4{
+    padding-top: 20px;
+    font-size: 25px;
+    color: #086ac1;
+}
+.emptAtt img{
+    height: 300px;
+}
+.tile:nth-child(3n+2){
+    background-color: #b3b5ee;
+}
+.info{
+    margin-top: 7%;
+    margin-left: 5%;
+}
+.sepDets{
+    display: flex;
+    width: 40vw;
+}
+#details a{
+    height: 40px;
+    width: 100px;
+    background-color: transparent;
+}
+.tile:nth-child(3n) .info{
+
+    color:#f5a467;  
+    
+}
+.tile:nth-child(3n+1) .info{
+    color: #086ac1;
+}
+.tile:nth-child(3n+2) .info{
+    color: #5d0384;
+}
+.tile:nth-child(3n) button{
+    border:1px solid #f5a467;
+    color:#f5a467;  
+    
+}
+.tile:nth-child(3n+1) button{
+    border:1px solid #086ac1;
+    color: #086ac1;
+}
+.tile:nth-child(3n+2) button{
+    border:1px solid #5d0384;
+    color: #5d0384;
+}
+.tile:nth-child(3n):hover{
+    background-color: #feeddd;  
+    
+}
+.tile:nth-child(3n+1):hover{
+    
+    background-color:#cfe1ef;
+}
+.tile:nth-child(3n+2):hover{
+    background-color: #d7dbf8;
+}
+.tile a{
+    text-decoration: none;
+}
+.noAss{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.noAss h3{
+    color: #086ac1;
+}
+.noAss img{
+    padding-top: 20px;
+    height: 300px;
+}
+.tile a{
+    padding: 0 30px;
+    margin:10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tile a .info{
+    width: 20vw;
+}
+.tile{
+    padding: 0 30px;
+    margin:10px 20px;
+    display: flex;
+    align-items: center;
+}
+.tile .info{
+    margin-bottom: 20px;
+}
+
+.tile img{
+    height:20vh;
+}
+.att{
+    height: 82vh;
+}
+#attend{
+    color: #3f85b9;
+    margin: 10px 20px;
+}
+#attendd{
+    color: #3f85b9;
+    margin: 20px 30px;
+}
+.myattendance,.unitmarks{
+    height: 79vh;
+    overflow-y: scroll;
+}
+.classs{
+    height: 76vh;
+}
+.units .h2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.units .h2 a{
+    color: #086ac1;
+    margin-right: 20px;
+}
+.averages h4,.current h4{
+    color: #3f85b9;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.averages table,.current table{
+    margin: auto;
+}
+.averages table #head,.fees th{
+    background-color: #3f85b9;
+}
+.averages table th,.fees th{
+    padding: 10px;
+    color: white;
+}
+.averages table td,.fees td{
+    background-color: white;
+    padding: 10px 60px;
+}
+.feestruct{
+    height: 79vh;
+    overflow-x: scroll;
+}
+.feesTrans{
+    height: 79vh;
+    overflow-y: scroll;
+}
+.current table td{
+    background-color: white;
+    padding: 10px 25px;
+    color: #3f85b9;
+}
+.current table th{
+    padding: 10px 25px;
+    background-color: white;
+    color: #3f85b9;
+}
+.empty img{
+    height: 250px;
+}
+.empty{
+    display: flex;
+    justify-content: center;
+}
+#empty{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 130%;
+}
+#empty h3{
+    display: flex;
+    text-align: center;
+    color: grey;
+}
+.enroltoclass{
+    display: flex;
+}
+.enroltoclass a{
+    color: #6ebbfe;
+
+}
+.current table td a{
+    color: #16f233;
+}
+.marks{
+    padding-right: 10px;
+}
+
+.current table tr:hover{
+    background-color: #d7dbf8;
+}
+.units{
+    min-height: 90vh;
+    margin-bottom: 20px;
+}
+.units table td{
+    padding: 10px 30px;
+
+}
+.headds{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+.fees{
+    margin: auto;
+}
+.headds a{
+    text-decoration: none;
+    color: #086ac1;
+}
+.headds h2{
+    color: #3f85b9;
+}
+.banner{
+    width: 64vw;
+    height: 150px;
+    background-image: linear-gradient(rgba(63, 133, 185,0.5),rgba(63, 133, 185,0.5)),url(/images/banner.png);
+    background-position: bottom;
+    background-size: cover;
+}
+.banner h2{
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding-top: 50px;
+    font-size: 30px;
+}
+.banner p{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.class .tile img{
+    height: 100px;
+}
+.class .tile{
+    height: 100px;
+}
+.enrolment{
+    width: 64vw;
+    height: 100vh;
+    background: linear-gradient(
+        to bottom right,#3f85b9,
+        #5efce8
+      );
+      display: flex;
+      justify-content: center;
+}
+.enrol{
+    margin-top: 90px;
+    width: 30vw;
+    height: 70vh;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+}
+.enrol h2{
+    padding-top: 40px;
+    display: flex;
+    color: #3f85b9;
+    justify-content: center;
+    
+}
+.enrol p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 13px;
+    color: grey;
+    margin-top: 10px;
+    padding-bottom: 40px;
+}
+.enrol form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.enrol form input{
+    width: 25vw;
+    height: 40px;
+    padding-left: 10px;
+}
+.enrol form button{
+    width: 25.8vw;
+    height: 45px;
+    background-color: #3f85b9;
+    color: white;
+    font-size: 18px;
+    border: none;
+    margin: 30px;
+}
+.enrol label{
+    display: flex;
+    justify-content: left;
+    font-weight: 600;
+    margin: 10px;
+    color: #3f85b9;
+}
+.attatch h2,.attatch p{
+    color: #3f85b9;
+    display: flex;
+    justify-content: center;
+}
+.attatch p{
+    margin: 20px;
+}
+.view{
+    display: flex;
+    justify-content: center;
+}
+.view a{
+    color: #086ac1;
+    margin: 20px;
+    padding-bottom: 45vh;
+}
