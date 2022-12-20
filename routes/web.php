@@ -17,7 +17,13 @@ Route::get('/', function () {
     return view('auth.login');
 });
 
+Route::get('/landing', function () {
+    return view('landingpage');
+});
 
+Route::get('/applications', 'ApplicationsController@index')->name('applications');
+
+Route::post('/applications/submit', 'ApplicationsController@submit')->name('applications.submit');
 
 Auth::routes();
 
@@ -87,31 +93,36 @@ Route::prefix('lecturer')->group(function(){
     Route::get('/{lecturer}', 'LecturerController@index')->name('lec.show');
 });
 
-Route::get('/Admin','AdminController@index')->name('admin');
+Route::prefix('Admin')->group(function(){
 
-Route::get('/Admin/students','AdminController@students')->name('admin.students');
+    Route::get('/','AdminController@index')->name('admin');
 
-Route::get('/Admin/lecturers','AdminController@lecturers')->name('admin.lecturers');
+    Route::get('/students','AdminController@students')->name('admin.students');
 
-Route::get('/Admin/viewStudents','AdminController@viewStudents')->name('admin.viewStudents');
+    Route::get('/lecturers','AdminController@lecturers')->name('admin.lecturers');
 
-Route::get('/Admin/viewLecturers','AdminController@viewLecturers')->name('admin.viewLecturers');
+    Route::get('/viewStudents','AdminController@viewStudents')->name('admin.viewStudents');
 
-Route::get('/Admin/editStudent/{student}','AdminController@editStudent')->name('admin.editStudent');
+    Route::get('/viewLecturers','AdminController@viewLecturers')->name('admin.viewLecturers');
 
-Route::get('/Admin/editLecturer/{lecturer}','AdminController@editLecturers')->name('admin.editLecturers');
+    Route::get('/editStudent/{student}','AdminController@editStudent')->name('admin.editStudent');
 
-Route::put('/Admin/updateStudents/{student}','AdminController@updateStudents')->name('admin.updateStudents');
+    Route::get('/editLecturer/{lecturer}','AdminController@editLecturers')->name('admin.editLecturers');
 
-Route::put('/Admin/updateLecturer/{lecturer}','AdminController@updateLecturer')->name('admin.updateLecturer');
+    Route::put('/updateStudents/{student}','AdminController@updateStudents')->name('admin.updateStudents');
 
-Route::delete('/Admin/deleteStudent/{student}','AdminController@deleteStudent')->name('admin.deleteStudent');
+    Route::put('/updateLecturer/{lecturer}','AdminController@updateLecturer')->name('admin.updateLecturer');
 
-Route::delete('/Admin/deleteLecturer/{lecturer}','AdminController@deleteLecturer')->name('admin.deleteLecturer');
+    Route::delete('/deleteStudent/{student}','AdminController@deleteStudent')->name('admin.deleteStudent');
+
+    Route::delete('/deleteLecturer/{lecturer}','AdminController@deleteLecturer')->name('admin.deleteLecturer');
 
 
-Route::post('/Admin/addLec','AdminController@addLecturer')->name('admin.addLecturer');
+    Route::post('/addLec','AdminController@addLecturer')->name('admin.addLecturer');
 
-Route::get('/Admin/addLecturerUnits','AdminController@addLecturerUnits')->name('admin.addLecturerUnits');
+    Route::get('/addLecturerUnits','AdminController@addLecturerUnits')->name('admin.addLecturerUnits');
 
-Route::post('/Admin/assign','AdminController@assign')->name('admin.assign');
+    Route::post('/assign','AdminController@assign')->name('admin.assign');
+
+});
+

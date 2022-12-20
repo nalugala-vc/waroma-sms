@@ -39,108 +39,35 @@
                 <th>Email</th>
                 <th>phone no</th>
             </tr>
+            @foreach($students as $std)
             <tr>
-                <td>10000</td>
-                <td><img src="/images/person.jpg" alt=""></td>
-                <td>Venessa Chebukwa</td>
+                <td>{{$std->id}}</td>
+                <td><img src="/assets/{{$std->picture}}" alt=""></td>
+                <td>{{$std->name}}</td>
                 <td>BICS</td>
-                <td>vanessachebukwa@gmail.com</td>
-                <td>0775097262</td>
+                <td>{{$std->email}}</td>
+                <td>{{$std->phone_number}}</td>
             </tr>
-            <tr>
-                <td>10000</td>
-                <td><img src="/images/person.jpg" alt=""></td>
-                <td>Venessa Chebukwa</td>
-                <td>BICS</td>
-                <td>vanessachebukwa@gmail.com</td>
-                <td>0775097262</td>
-            </tr>
-            <tr>
-                <td>10000</td>
-                <td><img src="/images/person.jpg" alt=""></td>
-                <td>Venessa Chebukwa</td>
-                <td>BICS</td>
-                <td>vanessachebukwa@gmail.com</td>
-                <td>0775097262</td>
-            </tr>
-            <tr>
-                <td>10000</td>
-                <td><img src="/images/person.jpg" alt=""></td>
-                <td>Venessa Chebukwa</td>
-                <td>BICS</td>
-                <td>vanessachebukwa@gmail.com</td>
-                <td>0775097262</td>
-            </tr>
-            <tr>
-                <td>10000</td>
-                <td><img src="/images/person.jpg" alt=""></td>
-                <td>Venessa Chebukwa</td>
-                <td>BICS</td>
-                <td>vanessachebukwa@gmail.com</td>
-                <td>0775097262</td>
-            </tr>
-            <tr>
-                <td>10000</td>
-                <td><img src="/images/person.jpg" alt=""></td>
-                <td>Venessa Chebukwa</td>
-                <td>BICS</td>
-                <td>vanessachebukwa@gmail.com</td>
-                <td>0775097262</td>
-            </tr>
-            <tr>
-                <td>10000</td>
-                <td><img src="/images/person.jpg" alt=""></td>
-                <td>Venessa Chebukwa</td>
-                <td>BICS</td>
-                <td>vanessachebukwa@gmail.com</td>
-                <td>0775097262</td>
-            </tr>
+            @endforeach
         </table>
     </div>
     <div class="applications">
         <h3>Applications</h3>
         <div class="applyy">
+            @foreach($applications as $studApplications)
             <div class="apply">
                 <div>
-                    <h4>Name:Venessa Chebukwa</h4>
+                    <h4>Name:{{$studApplications->name}}</h4>
                     <p>Course:BBIT</p>
-                    <p>KCSE:84 points</p>
+                    <p>KCSE:{{$studApplications->KCSE_points}}</p>
                 </div>
                 <div>
                     <button>Accept</button>
                 </div>
             </div>
-            <div class="apply">
-            <div>
-                <h4>Name:Venessa Chebukwa</h4>
-                <p>Course:BBIT</p>
-                <p>KCSE:84 points</p>
-            </div>
-            <div>
-                <button>Accept</button>
-            </div>
-        </div>
-        <div class="apply">
-            <div>
-                <h4>Name:Venessa Chebukwa</h4>
-                <p>Course:BBIT</p>
-                <p>KCSE:84 points</p>
-            </div>
-            <div>
-                <button>Accept</button>
-            </div>
-        </div>
-        <div class="apply">
-            <div>
-                <h4>Name:Venessa Chebukwa</h4>
-                <p>Course:BBIT</p>
-                <p>KCSE:84 points</p>
-            </div>
-            <div>
-                <button>Accept</button>
-            </div>
-        </div>
-        </div>
+            @endforeach
+            
+        
     </div>
 </div>
 @endsection

@@ -11,7 +11,12 @@ use Illuminate\Support\Facades\Hash;
 class AdminController extends Controller
 {
     public function index(){
-        return view('Admins.home');
+        $applications=DB::table('applications')->get();
+        $students=DB::table('students')->orderBy('created_at', 'ASC')->get();
+        return view('Admins.home',[
+            'applications'=>$applications,
+            'students'=>$students,
+        ]);
     }
 
     public function students(){
