@@ -16,12 +16,12 @@
                         <img src="/images/global (1).png" alt="" id="">
                     </div>
                     <div class="info">
-                        <h2>23%</h2>
+                        <h2></h2>
                         <p>{{$unit->name}}</p>
                     </div>
                 </div>
                 <div id="details">
-                    <a href="/viewAttendance/{{$student->id}}/{{$unit->id}}">see details</a>
+                    <a href="/viewAttendance/{{$unit->id}}">see details</a>
                 </div>
             </div>
             @empty

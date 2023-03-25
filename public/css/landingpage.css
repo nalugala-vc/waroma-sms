@@ -14,6 +14,11 @@ html{
     background-size: cover;
     /*position: relative;*/
 }
+.applyBtn button a,.textBtn button a{
+    text-decoration: none;
+    color: white;
+}
+
 .contact{
     display: flex;
     justify-content: center;

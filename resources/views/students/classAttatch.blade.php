@@ -13,7 +13,7 @@
     <h2>{{$assignment->heading}}</h2>
     <p>{{$assignment->message}}</p>
     <div class="view">
-            <a href="/viewStudents/{{$assignment->id}}/{{$student->id}}">view assignment</a>
+            <a href="/viewStudents/{{$assignment->id}}">view assignment</a>
             <a href="/download/{{$assignment->attachment}}">Download assignment</a>
         </div>
 </div>

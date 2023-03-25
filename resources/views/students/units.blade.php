@@ -17,7 +17,7 @@
                 <th>Year</th>
                 <th>Semister</th>
                 <th>Credits</th>
-                <th>status</th>
+              
             </tr>
             @forelse ($regg as $registered)
             <tr>
@@ -26,7 +26,7 @@
                 <td>{{$registered->year}}</td>
                 <td>{{$registered->semester}}</td>
                 <td>{{$registered->credits}}</td>
-                <td class="venue">{{$registered->status}}</td>
+                
             </tr>
             @empty
             <tr>

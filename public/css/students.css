@@ -39,12 +39,17 @@ body{
     font-size: 30px;
     font-family: just another hand;
 }
-#active{
+.active{
     background-color: #edf2f6;
+    color:#3f85b9 ;
 }
-#active a{
+.active a{
     color:#3f85b9 ;
     font-weight: 600;
+}
+.buttLog a{
+    color: white;
+    text-decoration: none;
 }
 .navs ul li{
     width: 200px;
@@ -657,4 +662,37 @@ body{
     color: #086ac1;
     margin: 20px;
     padding-bottom: 45vh;
+}
+.libraryBooks{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.book{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    width: 250px;
+}
+.libraryBooks>*{
+    margin: 10px;
+}
+.book h4{
+    text-align: center;
+    color: #3f85b9;
+    margin-top: 10px;
+}
+.book p,.book h4,.book div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.book img{
+    height: 200px;
+    width: 150px;
+}
+.book a{
+    color: #3f85b9;
+    margin: 4px;
 }

@@ -36,6 +36,20 @@ body{
     font-size: 25px;
     font-family: just another hand;
 }
+.notThe p{
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+}
+.loginLinks{
+    display: flex;
+    justify-content: center;
+}
+.loginLinks a{
+    font-size: 13px;
+    margin: 3px;
+    color: #2e76ea;
+}
 .form{
     height: 410px;
     width: 420px;

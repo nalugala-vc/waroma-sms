@@ -1,0 +1,124 @@
+body{
+    background-color: #3f85b9;
+    background: -webkit-linear-gradient( to right,#edf2f6,#3f85b9);
+    background: linear-gradient(to right,
+    #edf2f6,
+        #3f85b9);
+
+    font-family: poppins;
+}
+.pic p{
+    padding-top: 10px;
+    color: gray;
+    font-size: 13px;
+}
+.pic h2{
+    color: #3f85b9;
+    padding: 20px 0;
+}
+.credentials h2{
+    color: #02204f;
+    font-size: 18px;
+}
+
+.logo{
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    height: 30px;
+    width: 30px;
+}
+.credentials h3{
+    color: #3f85b9;
+}
+.credentials>*{
+    margin: 10px;
+}
+.main{
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pic img{
+    width: 500px;
+    height: 350px;
+}
+.pic>*{
+    margin: 0;
+    padding: 0;
+}
+.pic{
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 450px;
+    background-color: white;
+}
+.credentials{
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    height: 450PX;
+    background-color: #edf2f6;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.inp input{
+    height: 40px;
+    width: 300px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #02204f;
+}
+
+#video-streams {
+    padding-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    height: 85vh;
+    width: 1400px;
+    margin: 0 auto;
+}
+.video-container {
+    max-height: 100%;
+    border: 1px solid#02204f;
+    background-color:#3f85b9;
+}
+.join-btn{
+    margin-top: 50px;
+}
+::placeholder{
+    color: #3f85b9;
+    padding-left: 10px;
+}
+button{
+    border: none;
+    cursor: pointer;
+    background-color:#3f85b9;
+    width: 310px;
+    height: 40px;
+    font-size: 16px;
+    color:#edf2f6 ;
+    margin: 2px;
+}
+.video-player {
+    height: 100%;
+    width: 100%;
+}
+#stream-controls{
+    justify-content: center;
+    margin-top: 0.5em;
+}
+@media screen and (max-width:1400px){
+    #video-streams{
+        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+        width: 95%;
+    }
+    
+}

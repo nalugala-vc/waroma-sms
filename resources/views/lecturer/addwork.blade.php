@@ -8,10 +8,10 @@
             <p><b>{{$class->target_group}}</b></p>
         </section>
         <div class="links">
-            <a href="/class/{{$class->id}}/{{$lecturer->id}}" id="active">Classwork</a>
-            <a href="/students/{{$class->id}}/{{$lecturer->id}}">Students</a>
+            <a href="/class/{{$class->id}}" id="active">Classwork</a>
+            <a href="/students/{{$class->id}}">Students</a>
             <a href="/attendance/{{$class->id}}/{{$lecturer->id}}">Attendance</a>
-            <a href="/marks/{{$class->id}}/{{$lecturer->id}}">Marks</a>
+            <a href="/marks/{{$class->id}}">Marks</a>
             <a href="" id="add">add work</a>
         </div>
        <div class="addwork">

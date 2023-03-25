@@ -13,7 +13,7 @@
                 <span>or sign in with email</span>
             </h2>
         </div>
-        <form method="POST" action="{{ route('login') }}">
+        <form method="POST" action="/student/login">
             @csrf
 
             <div class="flexbox">
@@ -53,6 +53,13 @@
                             </a>
                         @endif
                     </div>
+            </div>
+            <div class="notThe">
+                <p>Not a Student?</p>
+            </div>
+            <div class="loginLinks">
+                <a href="/Admin/login">Admin Login</a>
+                <a href="/lecturer/loginForm">Lecturer Login</a>
             </div>
 
             <div class="flexbox button">              

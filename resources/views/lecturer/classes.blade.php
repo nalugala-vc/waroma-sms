@@ -8,15 +8,15 @@
             <p><b>{{$class->target_group}}</b></p>
         </section>
         <div class="links">
-            <a href="/class/{{$class->id}}/{{$lecturer->id}}" id="active">Classwork</a>
-            <a href="/students/{{$class->id}}/{{$lecturer->id}}">Students</a>
-            <a href="/attendance/{{$class->id}}/{{$lecturer->id}}">Attendance</a>
-            <a href="/marks/{{$class->id}}/{{$lecturer->id}}">Marks</a>
-            <a href="/work/{{$class->id}}/{{$lecturer->id}}" id="add">add work</a>
+            <a href="/class/{{$class->id}}" id="active">Classwork</a>
+            <a href="/students/{{$class->id}}">Students</a>
+            <a href="/attendance/{{$class->id}}">Attendance</a>
+            <a href="/marks/{{$class->id}}">Marks</a>
+            <a href="/work/{{$class->id}}" id="add">add work</a>
         </div>
         <div class="classwork">
             @forelse ($class->assignments as $assignments)
-                <a href="/showWork/{{$class->id}}/{{$assignments->id}}/{{$lecturer->id}}">
+                <a href="/showWork/{{$class->id}}/{{$assignments->id}}">
                     <div class="tile class">
                         <div class="attendImg">
                             <img src="/images/global (1).png" alt="">
@@ -32,7 +32,7 @@
             <div class="emptyClass">
                 <img src="/images/searching.png" alt="">
                 <h3>No assignments yet!</h3>
-                <a href="/work/{{$class->id}}/{{$lecturer->id}}">add assignments</a>
+                <a href="/work/{{$class->id}}">add assignments</a>
             </div>
             @endforelse
             

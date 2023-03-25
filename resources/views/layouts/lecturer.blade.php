@@ -24,11 +24,9 @@
                 <span>aroma</span>
             </div>
             <ul>
-                <li id="active"><a href=""><i class="fa-solid fa-house"></i><span>home</span></a></li>
-                <li><a href=""><i class="fa-solid fa-book"></i><span>classes</span></a></li>
-                <li><a href=""><i class="fa-solid fa-file-circle-check"></i><span>attendance</span></a></li>
-                <li><a href=""><i class="fa-solid fa-laptop"></i><span>grades</span></a></li>
-                <li><a href=""><i class="fa-solid fa-dollar-sign"></i><span>logout</span></a></li>
+                <li class=" {{ request()->is('lecturer/home') ? 'active' : '' }}"><a href=""><i class="fa-solid fa-house"></i><span>home</span></a></li>
+                <li class=" {{ request()->is('class/create') ? 'active' : '' }}"><a href="/class/create"><i class="fa-solid fa-book"></i><span>classes</span></a></li>
+                <li><a href="/logout"><i class="fa-solid fa-dollar-sign"></i><span>logout</span></a></li>
             </ul>
         </nav>
         <div class="controls">

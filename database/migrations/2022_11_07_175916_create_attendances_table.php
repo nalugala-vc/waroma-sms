@@ -19,7 +19,7 @@ class CreateAttendancesTable extends Migration
             $table->integer('unit_id')->unsigned();
             $table->date('Date');
             $table->time('Time');
-            $table->string('Duration');
+            $table->integer('Duration');
             $table->string('Attendance');
 
             $table->foreign('student_id')->references('id')->on('students')->onDelete('cascade');

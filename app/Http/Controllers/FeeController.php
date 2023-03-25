@@ -9,9 +9,9 @@ use Illuminate\Support\Facades\DB;
 
 class FeeController extends Controller
 {
-    public function index($student){
+    public function index(){
     
-        $student=Student::findOrFail($student);
+        $student=auth('students')->user();
         $feestructure=DB::table('feestructures')->where('course_id',$student->course->id)->where('year','<=',$student->year)->get();
         $feetransaction=DB::table('feetransactions')->where('student_id',$student->id)->get();
         $totalFees=0;
@@ -34,8 +34,8 @@ class FeeController extends Controller
         ]);
     }
 
-    public function show($student){
-        $student=Student::findOrFail($student);
+    public function show(){
+        $student=auth('students')->user();
         $table_heads=['year','semester','fullAmount','50% Deposit','Due Date','First Installment','Due Date','Second Instalment','Due Date'];
         // $year='year';
         // $semester='semester';

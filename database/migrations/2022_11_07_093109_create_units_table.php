@@ -20,7 +20,6 @@ class CreateUnitsTable extends Migration
             $table->integer('year');
             $table->integer('semester');
             $table->decimal('credits');
-            $table->string('status');
             $table->string('code');
 
             $table->foreign('course_id')->references('id')->on('courses')->onDelete('cascade');

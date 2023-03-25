@@ -38,7 +38,7 @@
                 <li><a href="#sstatistics">statictics</a></li>
                 <li>
                     <div class="buttonLogin">
-                        <a href="/">
+                        <a href="/login">
                             <button><b>Login</b></button>
                         </a>
                     </div>
@@ -53,7 +53,9 @@
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, reiciendis ut atque harum suscipit provident blanditiis omnis delectus</p>
         </div>
         <div class="applyBtn">
-            <button>apply now</button>
+            <button>
+                <a href="/applications">apply now</a>
+            </button>
         </div>
     </section>
     <section class="about" id="aabout">
@@ -78,7 +80,9 @@
                 </p>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae obcaecati animi, inventore dolor voluptas velit? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, ad maxime maiores architecto perspiciatis laudantium.</p>
                 <div class="textBtn">
-                    <button>apply now</button>
+                    <button>
+                        <a href="/applications">apply now</a>
+                    </button>
                 </div>
             </div>
         </div>

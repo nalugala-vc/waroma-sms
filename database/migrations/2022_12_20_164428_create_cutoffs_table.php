@@ -14,6 +14,7 @@ class CreateCutoffsTable extends Migration
     public function up()
     {
         Schema::create('cutoffs', function (Blueprint $table) {
+            $table->increments('id');
             $table->integer('course_id')->unsigned();
             $table->integer('cutoff');
 

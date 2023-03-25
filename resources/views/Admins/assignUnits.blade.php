@@ -1,6 +1,11 @@
 @extends ('layouts.admin')
 
 @section ('content')
+@if (session('application'))
+    <div class="alert alert-success">
+        {{ session('application') }}
+    </div>
+@endif
 <h2  class="space">Assign the lecturers their qualified units</h2>
 <p id="p">please assign the lecturers their respective units.Kindly note that a unit can have more than one lecturer and a lecturer can have more than one units</p>
 <form  method="POST" action="/Admin/assign" enctype="multipart/form-data">

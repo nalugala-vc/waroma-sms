@@ -8,6 +8,8 @@ use App\Http\Controllers\Controller;
 
 class LecturerLoginController extends Controller
 {
+    protected $redirectTo = '/lecturer/home';
+
     public function __construct()
     {
       $this->middleware('guest:lecturer');

@@ -10,8 +10,8 @@ class AddClassController extends Controller
 {
 
     
-    public function create($lecturer){
-        $lecturer=Lecturer::findOrFail($lecturer);
+    public function create(){
+        $lecturer=auth('lecturer')->user();
         date_default_timezone_set('Africa/Nairobi');
     
         
@@ -55,8 +55,8 @@ class AddClassController extends Controller
         dd(request()->all());
     }
 
-    public function show(\App\Classes $class,$lecturer){
-        $lecturer=Lecturer::findOrFail($lecturer);
+    public function show(\App\Classes $class){
+        $lecturer=auth('lecturer')->user();
         date_default_timezone_set('Africa/Nairobi');
     
         
@@ -86,8 +86,8 @@ class AddClassController extends Controller
         ]);
     }
 
-    public function students(\App\Classes $class,$lecturer){
-        $lecturer=Lecturer::findOrFail($lecturer);
+    public function students(\App\Classes $class){
+        $lecturer=auth('lecturer')->user();
         date_default_timezone_set('Africa/Nairobi');
     
         
@@ -118,8 +118,8 @@ class AddClassController extends Controller
         ]);
     }
 
-    public function attendance(\App\Classes $class,$lecturer){
-        $lecturer=Lecturer::findOrFail($lecturer);
+    public function attendance(\App\Classes $class){
+        $lecturer=auth('lecturer')->user();
         date_default_timezone_set('Africa/Nairobi');
     
         

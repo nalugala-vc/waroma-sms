@@ -49,7 +49,7 @@
                 <td>marks</td>
                 <td>grade</td>
                 <td>{{$unit->credits}}</td>
-                <td><a href="/unitmarks/{{$student->id}}/{{$unit->id}}">see details</a></td>
+                <td><a href="/unitmarks/{{$unit->id}}">see details</a></td>
             </tr>
             @endforeach
         </table>

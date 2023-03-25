@@ -1,6 +1,11 @@
 @extends ('layouts.admin')
 
 @section ('content')
+@if (session('application'))
+    <div class="alert alert-success">
+        {{ session('application') }}
+    </div>
+@endif
 <h2 id="h2">Edit students info</h2>
 <form  method="POST" action="/Admin/updateStudents/{$students->id}" enctype="multipart/form-data">
     @csrf

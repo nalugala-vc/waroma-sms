@@ -1,8 +1,13 @@
 @extends ('layouts.admin')
 
 @section ('content')
+@if (session('application'))
+    <div class="alert alert-success">
+        {{ session('application') }}
+    </div>
+@endif
 <h2 id="h2">Register new students</h2>
-<form  method="POST" action="{{ route('register') }}" enctype="multipart/form-data">
+<form  method="POST" action="/Admin/registerStudents" enctype="multipart/form-data">
     @csrf
     <div>
     <div class="inputs">

@@ -16,6 +16,7 @@ class CreateStudentUnitsTable extends Migration
         Schema::create('student_units', function (Blueprint $table) {
             $table->integer('student_id')->unsigned();
             $table->integer('unit_id')->unsigned();
+            $table->string('status')->default('AWAITING EXAMS');
 
             $table->foreign('student_id')->references('id')->on('students')->onDelete('cascade');
             $table->foreign('unit_id')->references('id')->on('units')->onDelete('cascade');

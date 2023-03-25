@@ -15,12 +15,13 @@ nav{
     align-items: center;
 }
 .logo span{
-    font-family: pacifico;
-    font-size: 20px;
+    font-family: just another hand;
+    font-size: 29px;
 }
+
 .apply span{
-    font-family: pacifico;
-    font-size: 18px;
+    font-family: just another hand;
+    font-size: 27px;
 }
 .logo img{
     height: 50px;
@@ -74,10 +75,29 @@ nav{
 .alert-success{
     color: green;
 }
-.div button{
+.div button,.divtoo button{
     height: 40px;
     width: 200px;
     background-color: #265f8e;
     color: white;
     border: none;
+}
+#buttondiv,#buttondiv2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 200px;
+    background-color: #265f8e;
+    color: white;
+    border: none;
+}
+.divtoo{
+    display: flex;
+}
+.divtoo>*{
+    margin: 5px;
+}
+#maintoo{
+    display: none;
 }

@@ -1,5 +1,7 @@
 <?php
 
+use App\Admins;
+
 return [
 
     /*
@@ -51,9 +53,34 @@ return [
             'provider' => 'lecturers',
             'hash' => false,
         ],
+        'students' => [
+            'driver' => 'session',
+            'provider' => 'students',
+            'hash' => false,
+        ],
         'lecturer-api' => [
             'driver' => 'token',
             'provider' => 'lecturers',
+            'hash' => false,
+        ],
+        'admins'=>[
+            'driver'=>'session',
+            'provider'=>'admins',
+            'hash'=>false,
+        ],
+        'admins-api' => [
+            'driver' => 'token',
+            'provider' => 'admins',
+            'hash' => false,
+        ],
+        'librarian'=>[
+            'driver'=>'session',
+            'provider'=>'librarian',
+            'hash'=>false,
+        ],
+        'librarian-api' => [
+            'driver' => 'token',
+            'provider' => 'librarian',
             'hash' => false,
         ],
     ],
@@ -88,6 +115,14 @@ return [
             'driver' => 'eloquent',
             'model' => App\Lecturer::class,
         ],
+        'admins'=>[
+            'driver'=>'eloquent',
+            'model'=>App\Admins::class,
+        ],
+        'librarian'=>[
+            'driver'=>'eloquent',
+            'model'=>App\Librarian::class,
+        ]
 
 
 
@@ -125,6 +160,16 @@ return [
         ],
         'lecturers' => [
             'provider' => 'lecturers',
+            'table' => 'password_resets',
+            'expire' => 60,
+        ],
+        'admins' => [
+            'provider' => 'admins',
+            'table' => 'password_resets',
+            'expire' => 60,
+        ],
+        'librarian' => [
+            'provider' => 'librarian',
             'table' => 'password_resets',
             'expire' => 60,
         ],

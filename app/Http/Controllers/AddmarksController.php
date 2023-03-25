@@ -10,9 +10,9 @@ use Illuminate\Support\Facades\DB;
 class AddmarksController extends Controller
 {
     
-    public function create(\App\Classes $class,$lecturer){
+    public function create(\App\Classes $class){
         
-        $lecturer=Lecturer::findOrFail($lecturer);
+        $lecturer=auth('lecturer')->user();
         date_default_timezone_set('Africa/Nairobi');
     
         
@@ -58,8 +58,8 @@ class AddmarksController extends Controller
         dd(request()->all());
     }
 
-    public function edit($class,$lecturer){
-        $lecturer=Lecturer::findOrFail($lecturer);
+    public function edit($class){
+        $lecturer=auth('lecturer')->user();
         $class=Classes::findOrFail($class);
         $update=DB::table('studentmarks')->where('unit_id',$class->unit_id)->get();
        

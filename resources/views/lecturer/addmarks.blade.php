@@ -8,11 +8,11 @@
             <p><b>{{$class->target_group}}</b></p>
         </section>
         <div class="links">
-            <a href="/class/{{$class->id}}/{{$lecturer->id}}">Classwork</a>
-            <a href="/students/{{$class->id}}/{{$lecturer->id}}">Students</a>
-            <a href="/attendance/{{$class->id}}/{{$lecturer->id}}">Attendance</a>
-            <a href="/marks/{{$class->id}}/{{$lecturer->id}}" id="active">Marks</a>
-            <a href="/marksEdit/{{$class->id}}/{{$lecturer->id}}" id="add">edit marks</a>
+            <a href="/class/{{$class->id}}">Classwork</a>
+            <a href="/students/{{$class->id}}">Students</a>
+            <a href="/attendance/{{$class->id}}">Attendance</a>
+            <a href="/marks/{{$class->id}}" id="active">Marks</a>
+            <a href="/marksEdit/{{$class->id}}" id="add">edit marks</a>
         </div>
         <div class="attendance">
             <form action="/marks" method="post" id="newclass" class="attend">

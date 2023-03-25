@@ -25,8 +25,8 @@ class AttendanceController extends Controller
         dd(request()->all());
     }
 
-    public function edit($class,$lecturer){
-        $lecturer=Lecturer::findOrFail($lecturer);
+    public function edit($class){
+        $lecturer=auth('lecturer')->user();
         $class=Classes::findOrFail($class);
         $update=DB::table('attendances')->where('unit_id',$class->unit_id)->get();
        

@@ -54,6 +54,13 @@
                         @endif
                     </div>
             </div>
+            <div class="notThe">
+                <p>Not a Lecturer?</p>
+            </div>
+            <div class="loginLinks">
+                <a href="/login">Student Login</a>
+                <a href="/Admin/login">Admin Login</a>
+            </div>
 
             <div class="flexbox button">              
                     <button type="submit">

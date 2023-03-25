@@ -10,7 +10,7 @@
         <div class="tiles class">
             @forelse ($class->assignments as $assignments)
             <div class="tile class">
-                    <a href="/assignments/{{$student->id}}/{{$class->id}}/{{$assignments->id}}">
+                    <a href="/assignments/{{$class->id}}/{{$assignments->id}}">
                         <div class="attendImg">
                             <img src="/images/global (2).png" alt="">
                         </div>

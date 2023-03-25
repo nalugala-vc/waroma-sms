@@ -3,15 +3,16 @@
 namespace App\Http\Controllers;
 use \App\Lecturer;
 use \App\Assignments;
+use App\Books;
 use \App\Classes;
-
+use App\Student;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
 class AddworkController extends Controller
 {
-    public function create(\App\Classes $class,$lecturer){
-        $lecturer=Lecturer::findOrFail($lecturer);
+    public function create(\App\Classes $class){
+        $lecturer=auth('lecturer')->user();
         date_default_timezone_set('Africa/Nairobi');
 
         $schedule=DB::table('schedules')->where('lecturers_id',$lecturer->id)->where('day',strtolower(date('l')))->where('start_time','>',date('H:i:s'))->get();
@@ -75,8 +76,8 @@ class AddworkController extends Controller
     //     ]);
     // }
 
-    public function show($class,$assignments,$lecturer){
-        $lecturer=Lecturer::findOrFail($lecturer);
+    public function show($class,$assignments){
+        $lecturer=auth('lecturer')->user();
         $class=Classes::findOrFail($class);
         $assignments=Assignments::findOrFail($assignments);
         date_default_timezone_set('Africa/Nairobi');
@@ -113,8 +114,8 @@ class AddworkController extends Controller
         return response()->download(public_path('assets/'.$assignments));
     }
 
-    public function view($assignments,$lecturer){
-        $lecturer=Lecturer::findOrFail($lecturer);
+    public function view($assignments){
+        $lecturer=auth('lecturer')->user();
         $assignments=Assignments::findOrFail($assignments);
 
         date_default_timezone_set('Africa/Nairobi');
@@ -146,4 +147,30 @@ class AddworkController extends Controller
 
         ]);
     }
+
+    public function viewBook($book)
+    {
+        $student=auth('students')->user();
+        $book=Books::findOrFail($book);
+
+        return view('students.viewBook',[
+            'book'=>$book,
+            'student'=>$student
+        ]);
+    }
+
+    // public function download($assignments){
+
+    //     return response()->download(public_path('assets/'.$assignments));
+    // }
+
+    public function downloadBook($book){
+        $book=Books::findOrFail($book);
+
+        $bookPdf=$book->pdf;
+
+        return response()->download(public_path('storage/'.$bookPdf));
+
+    }
+
 }

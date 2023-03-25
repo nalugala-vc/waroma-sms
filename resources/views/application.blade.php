@@ -32,13 +32,13 @@
         </div>
     </nav>
     <div class="body">
-        <div class="main">
+        <div class="main" id="main">
             <div class="form">
                 <span>Tell us more about you</span>
                 <br>
                 <span>To help us consider your application</span>
             </div>
-            <form method="POST" action="/applications/submit" >
+            <form method="POST" action="/applications/submit" enctype="multipart/form-data" >
                 @csrf
                 <div class="inp">
                     <div>
@@ -141,14 +141,106 @@
                         @enderror
                     </div>
                 </div>
-                <div class="div">
+                <div id="buttondiv">
+                    <span>Next</span>
+                </div>
+        </div>
+        <div class="maintoo" id="maintoo">
+            <div class="form">
+                <span>Just a few more details</span>
+                <br>
+                <span>To complete your application</span>
+            </div>
+                <div class="inp">
+                    <div>
+                        <input type="number" placeholder="Year" name="year">
+                        @error('year')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
+                    </div>
+                    <div>
+                        <input type="semester" placeholder="semester" name="semester">
+                        @error('semester')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
+                    </div>
+                </div>
+                <div class="inp">
+                    <div>
+                        <select name="gender" id="">
+                            <option value="">Gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                           
+                        </select>
+                        @error('gender')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Parent Name" name="parent_name">
+                        @error('parent_name')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
+                    </div>
+                </div>
+                <div class="inp">
+                    <div>
+                        <input type="email" placeholder="Parent Email" name="parent_email">
+                        @error('parent_email')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
+                    </div>
+                    <div>
+                        <input type="text" name="parent_no" id="" placeholder="Parent Number">
+                        @error('parent_no')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
+                    </div>
+                </div>
+                <div class="inp">
+                    <div>
+                        <input type="text" name="home_location" id="" placeholder="Home Location">
+                        @error('home_location')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
+                    </div>
+                    <div>
+                        <input type="file" name="picture">
+                        @error('picture')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
+                    </div>
+                </div>
+                <div class="divtoo">
+                    <div id="buttondiv2">
+                        <span>Previous</span>
+                    </div>
                     <button type="submit">Submit</button>
                 </div>
             </form>
+
         </div>
         <div class="imagediv">
             <img src="/images/applications.png" alt="">
         </div>
     </div>
+    <script src="/js/application.js"></script>
 </body>
 </html>

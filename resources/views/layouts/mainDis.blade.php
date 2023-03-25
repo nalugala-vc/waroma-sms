@@ -23,11 +23,12 @@
         <span>aroma</span></div>
         <div class="navs">
             <ul>
-                <li id="active"><a href=""><i class="fa-solid fa-house"></i><span>home</span></a></li>
-                <li><a href=""><i class="fa-solid fa-book"></i><span>attendance</span></a></li>
-                <li><a href=""><i class="fa-solid fa-file-circle-check"></i><span>course marks</span></a></li>
-                <li><a href=""><i class="fa-solid fa-laptop"></i><span>units</span></a></li>
-                <li><a href=""><i class="fa-solid fa-dollar-sign"></i><span>fee transactions</span></a></li>
+                <li class=" {{ request()->is('home') ? 'active' : '' }}"><a href="/home"><i class="fa-solid fa-house"></i><span>home</span></a></li>
+                <li class=" {{ request()->is('attendance') ? 'active' : '' }}"><a href="/attendance"><i class="fa-solid fa-check"></i><span>attendance</span></a></li>
+                <li class=" {{ request()->is('coursework') ? 'active' : '' }}"><a href="/coursework"><i class="fa-solid fa-file-circle-check"></i><span>course work</span></a></li>
+                <li class=" {{ request()->is('units') ? 'active' : '' }}"><a href="/units"><i class="fa-solid fa-laptop"></i><span>units</span></a></li>
+                <li class=" {{ request()->is('fees') ? 'active' : '' }}"><a href="/fees"><i class="fa-solid fa-dollar-sign"></i><span>fee transactions</span></a></li>
+                <li class=" {{ request()->is('library') ? 'active' : '' }}"><a href="/library"><i class="fa-solid fa-book"></i><span>library</span></a></li>
             </ul>
         </div>
         <div class="logout">
@@ -35,11 +36,7 @@
             <p>are you sure you want to logout from e-learning?</p>
             <div class="buttLog">
                 <button>
-                    <a class="dropdown-item" href="{{ route('logout') }}"
-                        onclick="event.preventDefault();
-                                        document.getElementById('logout-form').submit();">
-                        {{ __('Logout') }}
-                    </a>
+                    <a href="/logout">Logout</a>
                 </button>
             </div>
         </div>
@@ -73,7 +70,9 @@
                 <img src="/images/Begin chat.png" alt="">
                 <p>see what your collegues are up to</p>
                 <div class="buttLog">
-                    <button>chat now</button>
+                    <button>
+                        <a href="/discussionForum">Chat Now</a>
+                    </button>
                 </div>
             </div>
         </div>

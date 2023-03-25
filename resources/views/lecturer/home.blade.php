@@ -15,12 +15,12 @@
         </div>
         <div class="addingclass">
             <h3>Your Classes</h3>
-            <span><i class="fa-solid fa-plus"></i> <a href="">add new class</a></span>
+            <span><i class="fa-solid fa-plus"></i> <a href="/class/create">add new class</a></span>
         </div>
         <div class="lecclasses">
             @forelse ($lecturer->classes as $classes)
             <div class="classOne">
-                <a href="/class/{{$classes->id}}/{{$lecturer->id}}">
+                <a href="/class/{{$classes->id}}">
                     <div id="classOne">
                         <h4>{{$classes->name}}</h4>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, quo? Fugit, numquam. Numquam, quasi reiciendis facere a mollitia rerum quis?</p>
@@ -74,42 +74,15 @@
                 <button><i class="fa-solid fa-greater-than"></i></button>
             </div>
         </div>
-        <div class="students">
-            <div class="intro">
-                <h4>Your Students</h4>
-                <a href="">see all</a>
+        <div class="virtualImage">
+                <img src="/images/Group-Video.png" alt="">
             </div>
-            <div class="lecStudents">
-                <div class="img">
-                    <img src="/images/person.jpg" alt="">
-                    <div class="infodiv">
-                        <p>Venessa Chebukwa</p>
-                    </div>
-                </div>
-                <div class="img">
-                    <img src="/images/person.jpg" alt="">
-                    <div class="infodiv">
-                        <p>Venessa Chebukwa</p>
-                    </div>
-                </div>
-                <div class="img">
-                    <img src="/images/person.jpg" alt="">
-                    <div class="infodiv">
-                        <p>Venessa Chebukwa</p>
-                    </div>
-                </div>
-                <div class="img">
-                    <img src="/images/person.jpg" alt="">
-                    <div class="infodiv">
-                        <p>Venessa Chebukwa</p>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="virtual">
             <p>Join virtual discussion rooms with your students</p>
             <div>
-                <button>join discussion</button>
+                <button>
+                    <a href="/discussionForum">Join Now</a>
+                </button>
             </div>
         </div>
     </div>

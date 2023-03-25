@@ -3,6 +3,11 @@
     padding: 0;
     font-family: inter tight;
 }
+#imaging img{
+    height: 50px;
+    border-radius: 0;
+
+}
 .maindis{
     display: flex;
 }
@@ -29,8 +34,21 @@ nav ul li a{
     text-decoration: none;
     color: rgb(166, 166, 166);
 }
-ul #active a{
+ul .active a{
     color: white;
+}
+.libraryLinks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.libraryLinks a{
+    
+    color: #3f85b9;
+    font-family: poppins;
+}
+.libraryLinks>*{
+    margin: 5px;
 }
 .logo{
     padding-top: 20px;
@@ -136,6 +154,8 @@ ul #active a{
 .students table th{
     padding-top: 10px;
     padding-bottom: 10px;
+    padding-left: 7px;
+    padding-right: 7px;
     font-size: 13px;
     color: #3f85b9;
 }
@@ -268,14 +288,23 @@ input::placeholder{
     color: #699abf;
     text-decoration: none;
 }
+.viewStudents{
+    min-height: 100px;
+    overflow-y: scroll;
+
+}
 .viewStudents table{
     padding: 0 15px;
     border-radius:20px ;
     background-color: white;
+    min-height: 100px;
+    overflow-y: scroll;
 }
 .viewStudents table th{
     padding-top: 10px;
     padding-bottom: 10px;
+    padding-left: 7px;
+    padding-right: 7px;
     font-size: 11px;
     color: #3f85b9;
 }
@@ -293,9 +322,16 @@ input::placeholder{
     display: flex;
     justify-content: center;
     margin-top: 10px;
+    height: 90vh;
+    overflow-y: scroll;
+}
+.lec table{
+    height: 90vh;
+    overflow-y: scroll;
 }
 .lec table th{
     font-size: 15px;
+    padding: 7px 7px;
 }
 .lec table td{
     padding: 15px 20px;
@@ -331,6 +367,17 @@ input::placeholder{
     background-color: transparent;
     border: 1px solid red;
     color: red;
+}
+.alert-success{
+    color: green;
+    font-family: poppins;
+}
+.imageApp{
+    margin-top: 50px;
+    margin-left: 100%;
+}
+.imageApp img{
+    height: 300px;
 }
 .space{
     margin-top: 100px;

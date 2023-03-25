@@ -8,10 +8,10 @@
             <p><b>ICS GROUP C</b></p>
         </section>
         <div class="links">
-            <a href="">Classwork</a>
-            <a href="">Students</a>
-            <a href="">Attendance</a>
-            <a href="" id="active">Marks</a>
+            <a href="/class/{{$class->id}}">Classwork</a>
+            <a href="/students/{{$class->id}}">Students</a>
+            <a href="/attendance/{{$class->id}}" id="active">Attendance</a>
+            <a href="/marks/{{$class->id}}">Marks</a>
             <a href="" id="add" class="addActive">edit marks</a>
         </div>
         <div class="attendance">

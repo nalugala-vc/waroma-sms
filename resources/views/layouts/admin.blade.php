@@ -23,15 +23,17 @@
             <span>aroma</span>
         </div>
         <ul>
-            <li><a href="">Dashboard</a></li>
-            <li><a href="">Applications</a></li>
-            <li><a href="">Students</a></li>
-            <li><a href="">Lecturers</a></li>
+            <li class=" {{ request()->is('Admin/home') ? 'active' : '' }}"><a href="/Admin/home">Dashboard</a></li>
+            <li class=" {{ request()->is('Admin/applications') ? 'active' : '' }}"><a href="/Admin/applications">Applications</a></li>
+            <li class=" {{ request()->is('Admin/students') ? 'active' : '' }}"><a href="/Admin/students">Students</a></li>
+            <li class=" {{ request()->is('Admin/lecturers') ? 'active' : '' }}"><a href="/Admin/lecturers">Lecturers</a></li>
+            <li class=" {{ request()->is('Library/genre') ? 'active' : '' }}"><a href="/Library/genre">Library</a></li>
+
         </ul>
         <div class="profileDiv">
             <img src="/images/person.jpg" alt="">
-            <h5>Venessa Chebukwa</h5>
-            <p>vanessachebukwa@gmail.com</p>
+            <h5>{{$admin->name}}</h5>
+            <p>{{$admin->email}}</p>
             <div class="buttons">
                 <button><i class="fa-regular fa-bell"></i></button>
                 <button><i class="fa-solid fa-gear"></i></button>

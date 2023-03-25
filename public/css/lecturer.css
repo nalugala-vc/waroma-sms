@@ -26,7 +26,19 @@ nav ul li a{
     text-decoration: none;
     color: rgb(166, 166, 166);
 }
-ul #active a{
+ul .active a{
+    color: white;
+}
+.virtualImage img{
+    height: 200px;
+}
+.virtualImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.virtual button a{
+    text-decoration: none;
     color: white;
 }
 .logo{
@@ -375,7 +387,7 @@ ul #active a{
     margin: 20px;
 }
 .virtual{
-    position: relative;
+
     top: 120px;
     margin: 10px 30px;
     height: 100px;

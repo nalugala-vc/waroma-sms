@@ -11,9 +11,9 @@ use PhpParser\Node\Stmt\Foreach_;
 class UnitsController extends Controller
 {
 
-    public function show($student){
+    public function show(){
 
-        $student=Student::findOrFail($student);
+        $student=auth('students')->user();
         $registered_stud_units=[];
         $applicable_units=DB::table('units')->where('course_id',$student->course_id)->where('semester',$student->semester)->where('year',$student->year)->get();
         $registerd_units=DB::table('student_units')->where('student_id',$student->id)->get();

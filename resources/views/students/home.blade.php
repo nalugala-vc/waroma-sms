@@ -11,7 +11,7 @@
         <div id="cards">
                 @forelse($student->classes as $class)
                 <div class="card bounce">
-                    <a href="/studentClass/{{$student->id}}/{{$class->id}}">
+                    <a href="/studentClass/{{$class->id}}">
                         <div class="img">
                             <img src="/images/notetakingg.png" alt="" id="svgStudents">
                         </div>
@@ -30,7 +30,7 @@
                         <h3>Opss you have not enrolled to any classes</h3>
                     </div>
                     <div class="enroltoclass">
-                        <a href="">EnrollToClass</a>
+                        <a href="/enrolment">EnrollToClass</a>
                     </div>
                  </div>
                  @endforelse

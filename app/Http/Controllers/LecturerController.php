@@ -19,17 +19,19 @@ class LecturerController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index($lecturer)
+    public function index()
     {
-        $lecturer =Lecturer::findOrFail($lecturer);
-        $students=[];
+        $lecturer=auth('lecturer')->user();
         $stude=0;
+        $studentt=[];
         // $students=DB::table('student_classes')->where('classes_id',$classes->id)->get();
 
 
         foreach($lecturer->classes as $class){
             $student=DB::table('student_classes')->where('classes_id',$class->id)->get()->count();
+            $students=DB::table('student_classes')->where('classes_id',$class->id)->get();
             $stude=$student+$stude;
+            array_push($studentt,$students);
         }
         
         return view('lecturer.home',[

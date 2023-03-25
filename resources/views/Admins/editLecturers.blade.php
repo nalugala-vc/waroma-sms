@@ -1,6 +1,11 @@
 @extends ('layouts.admin')
 
 @section ('content')
+@if (session('application'))
+    <div class="alert alert-success">
+        {{ session('application') }}
+    </div>
+@endif
 <h2 id="h2">Edit lecturer's details</h2>
 <form  method="POST" action="/Admin/updateLecturer/{{$lecturer->id}}" enctype="multipart/form-data">
     @csrf
@@ -40,7 +45,7 @@
         <div class="inp">
             <label for=""><i class="fa-solid fa-venus-mars"></i> <span>Gender</span></label>
             <select name="gender" id="">
-                <option value="">Choose student's gender</option>
+                <option value="">Choose Lecturer's gender</option>
                 <option value="Male">Male</option>
                 <option value="Female">Female</option>
             </select>
