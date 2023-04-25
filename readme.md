@@ -14,7 +14,13 @@ The school management system includes the following features:
 * Online Learning and Course Material Access
 * Messaging and Communication System(inbuilt video calling feature)
 ## Screenshots
-[Add screenshots here]
+![Screenshot (91)_macbookpro15_front](https://user-images.githubusercontent.com/98637307/234275871-6fe34f5e-34b7-44c0-b1c3-2475cd190ce3.png)
+![Screenshot (92)_macbookpro15_front](https://user-images.githubusercontent.com/98637307/234276009-1f11cedc-d0af-42c3-b88e-d48ea7b3502a.png)
+![Screenshot (94)_macbookpro15_front](https://user-images.githubusercontent.com/98637307/234276575-bfe7bbe3-3eca-4a81-8e5b-ba65ca532a9e.png)
+![Screenshot (95)_macbookpro15_front](https://user-images.githubusercontent.com/98637307/234276645-0ee6edf5-766c-4995-a0d3-6cdde1170629.png)
+![Screenshot (4)_macbookpro15_front](https://user-images.githubusercontent.com/98637307/234276775-e9dbfe1f-541e-4feb-acc1-153644fabfc2.png)
+![Screenshot (3)_macbookpro15_front](https://user-images.githubusercontent.com/98637307/234276832-a67dd64a-3256-496f-9926-6d0296098729.png)
+
 
 ## Installation
 To use Waroma, follow these steps:
